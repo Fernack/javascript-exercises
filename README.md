@@ -21,22 +21,23 @@ Exercises
 1 - Create a function that takes an array of integers as its lone argument and returns 
 an array containing the square of each value in the input.
 
+```
 For example, an input of `[2, 4, 6, 8, 10]` should result in an output of `[4, 16, 36, 
 64, 100]`.
 
 For Testing:
 console.log(calculateSquare([2, 4, 6, 8, 10]));
-
+```
 
 2 - Create a function that takes an array of counter objects (see example) as its lone 
 argument and returns the sum of all of the counters' `count` properties.
-
+```
 For example, an input of `[{count: 1}, {count: 2}, {count: 3}]` should result in an 
 output of `6`.
 
 For Testing:
 console.log(sumCounters([{count: 1}, {count: 2}, {count: 3}]));
-
+```
 
 3 - Create a function that takes an object in the general shape of `movies` (see below)
 as the first argument,and the name of an actor as the second argument. The function 
@@ -47,10 +48,10 @@ mutate the input object, or any of its sub-structures.
 
 Note: `movies` is just an example, the function should not assume that the movies in 
 the object will be hard-coded.
-
+```
 For Testing:
 console.log(actorInMovies(movies, "Tom Cruise"));
-
+```
 
 4 - Create a procedure that takes an object in the general shape of `movies` as its lone
 argument and appends an unordered list of every actor's name to the DOM's `body` 
@@ -60,10 +61,10 @@ than once).
 If the list element already exists in the DOM, the procedure should replace the existing 
 list with a new one.
 Bonus points if the names are alphabetically sorted :)
-
+```
 For Testing:
 listActors(movies)
-
+```
 
 5 - Create a procedure that retrieves the data from the REST API endpoint hosted here:
 https://jsonplaceholder.typicode.com/posts.
@@ -91,6 +92,7 @@ Exercises
 
 1 - Given an array of integers, return a new array with each number squared.
 
+```
 Example 1:
     Input: nums = [2, 4, 6, 8, 10]
     Output: [4, 16, 36, 64, 100]
@@ -100,10 +102,10 @@ Example 2:
     Output: [289, 81, 34596]
 
 const squares = nums => {}
-
+```
 
 2 - Given an array of counter objects, return the sum of all objects' "count" property.
-
+```
 Example 1:
     Input: counters = [{count: 1}, {count: 2}, {count: 3}]
     Output = 6
@@ -113,14 +115,15 @@ Example 2:
     Output: 177
 
 const sum = counters => {}
-
+```
 3 - Given a dictionary of movie objects keyed by the movie's title, and a string of an 
 actor's name, return a new dictionary with the actor's name included in the array 
 referred to by each movie's "actors" property. If the name is already included in 
 "actors", it should not be included again. Order does not matter. Your function should 
 not modify the input dictionary or any of its sub-structures.
 
-Example 1:
+```
+Example 1: 
     Input:
         movies = {
             'big': {
@@ -170,12 +173,12 @@ Example 2:
     }
 
 const moviesWithActor = (movies, actor) => {}
-
+```
 
 4 - Given two input objects that both represent the root node of a binary tree, return a 
 boolean indicating whether or not the two trees are structurally identical. Assume that 
 each tree may contain up to 100 nodes.
-
+```
 Example 1:
     Input:
         a = {
@@ -222,14 +225,14 @@ Example 3:
     Output: false
 
 const treesAreEqual = (a, b) => {}
-
+```
 
 5 - Given a string containing alphanumeric characters and dashes `str`, and an integer 
 representing group size `n`, return a newly formatted version of `str` in which the 
 alphanumeric characters are grouped according to `n`, and separated by dashes. Each 
 group should contain exactly `n` characters except for the first one, which may contain
 less than `n` characters to account for any remainder.
-
+```
 Example 1:
     Input:
         str = "3h5n-8v-7-m"
@@ -249,9 +252,9 @@ Example 3:
     Output: "j45i-9ut53-4fx10"
 
 const formatted = (str, n) => {}
-
+```
 TEST CASES
-
+```
 const testSolutions = () => {
     const assert = cond => {
         if (!cond) throw new Error('assertion failure')
@@ -331,3 +334,4 @@ const testSolutions = () => {
     assert(formatted("j-45i9ut5-34f-x10", 5) === "j45i-9ut53-4fx10")
     console.log('passed')
 }
+```
